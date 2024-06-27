@@ -17,7 +17,7 @@ class CounterBloc extends Bloc<CounterEvent, int> {
     on<CounterDecrement>((event, emit) {
       if (state > 0) {
         if (kDebugMode) {
-          print('state before $state');
+          print('state befor $state');
         }
         emit(
           state - 1,
